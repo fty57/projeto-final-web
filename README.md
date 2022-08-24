@@ -4,5 +4,5 @@ Horror Movies Database é uma base de dados grátis e de código aberto, sobre f
 
 ## Membros da equipe
 
-Francisco Álisson Véras Damascenp, 473558, Design Digital
-Gabriel Ilês
+- Francisco Álisson Véras Damasceno, 473558, Design Digital
+- Gabriel Ilês, matrícula, Ciência da Computação
