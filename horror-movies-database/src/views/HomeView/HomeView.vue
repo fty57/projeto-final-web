@@ -1,30 +1,30 @@
 <script setup lang="ts">
 import NavBarVue from "@/components/NavBar/NavBar.vue";
-import MovieCard from "@/components/MovieCard/MovieCard.vue";
-import MovieGroup from "@/components/MovieGroup/MovieGroup.vue";
+import Carousel from "../../components/Carousel/Carousel.vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+import ImagemCover from "../../components/imagemCover/imagemCover.vue";
 </script>
 
 <template>
   <div class="HomeMain">
     <NavBarVue></NavBarVue>
-    <div style="height: 500px"></div>
   </div>
 
   <div class="HomeOffMain">
     <div class="HomeBody">
-      <MovieGroup></MovieGroup>
+      <ImagemCover />
+      <Carousel />
     </div>
   </div>
 </template>
 
 <style scoped>
 .HomeMain {
-  padding: 2.5%;
-  background-color: #c9c9c9;
+  padding-top: 2.5%;
+  background-color: transparent;
 }
 .HomeBody {
-  background-color: #141810;
+  background-color: #131212;
 }
 </style>

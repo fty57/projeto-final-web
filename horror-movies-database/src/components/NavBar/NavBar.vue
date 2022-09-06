@@ -1,8 +1,12 @@
+<script lang="ts">
+import "./style.css";
+</script>
+
 <template>
-  <div class="container text-center">
+  <div class="container text-center NavBarContainer">
     <div class="row">
       <div class="col">
-        <h5>THE SILVER SCREAM</h5>
+        <h5 class="colorTitle">THE SILVER SCREAM</h5>
       </div>
       <div class="col">
         <div class="input-group mb-3">
@@ -21,8 +25,8 @@
           </button>
         </div>
       </div>
-      <div class="col">TEXTO1</div>
-      <div class="col">TEXTO2</div>
+      <div class="col colorSubTitlePrimary">TEXTO1</div>
+      <div class="col colorSubTitleSecondary">TEXTO2</div>
       <div class="col">
         <img
           src=".././../img/vanallope.jpg"
