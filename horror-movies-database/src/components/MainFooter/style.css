@@ -1,0 +1,44 @@
+.Footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #000000;
+}
+
+.FooterLeft {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FooterTitle {
+  color: rgb(140, 2, 2);
+}
+
+.FooterLIcon {
+  margin-right: 5px;
+  color: rgb(140, 2, 2);
+}
+
+.FooterRight {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.FooterList {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.FooterLink {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}

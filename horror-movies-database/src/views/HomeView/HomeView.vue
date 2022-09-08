@@ -3,7 +3,8 @@ import NavBarVue from "@/components/NavBar/NavBar.vue";
 import Carousel from "../../components/Carousel/Carousel.vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-import ImagemCover from "../../components/imagemCover/imagemCover.vue";
+import ImagemCover from "../../components/ImageCover/ImageCover.vue";
+import MainFooter from "../../components/MainFooter/MainFooter.vue";
 </script>
 
 <template>
@@ -15,6 +16,8 @@ import ImagemCover from "../../components/imagemCover/imagemCover.vue";
     <div class="HomeBody">
       <ImagemCover />
       <Carousel />
+      <Carousel />
+      <MainFooter />
     </div>
   </div>
 </template>

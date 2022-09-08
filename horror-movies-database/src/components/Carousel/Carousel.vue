@@ -62,7 +62,7 @@ export default {
     <swiper-slide>
       <div class="image-content">
         <div class="card-image">
-          <img src="../../img/Iluminado.jpg" alt="" class="card-img" />
+          <img src="../../img/ScaryMovie.jpg" alt="" class="card-img" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
