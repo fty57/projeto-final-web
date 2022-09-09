@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 import ImagemCover from "../../components/ImageCover/ImageCover.vue";
 import MainFooter from "../../components/MainFooter/MainFooter.vue";
+import CarouselBottom from "../../components/CarouselBottom/CarouselBottom.vue";
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import MainFooter from "../../components/MainFooter/MainFooter.vue";
       <ImagemCover />
       <Carousel />
       <Carousel />
+      <CarouselBottom />
       <MainFooter />
     </div>
   </div>
@@ -24,10 +26,14 @@ import MainFooter from "../../components/MainFooter/MainFooter.vue";
 
 <style scoped>
 .HomeMain {
+  width: 100%;
+  height: 15%;
   padding-top: 2.5%;
   background-color: transparent;
 }
 .HomeBody {
+  width: 100%;
+  height: 85%;
   background-color: #131212;
 }
 </style>
