@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import NavBarVue from "@/components/NavBar/NavBar.vue";
-import Carousel from "../../components/Carousel/Carousel.vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
-import ImagemCover from "../../components/ImageCover/ImageCover.vue";
-import MainFooter from "../../components/MainFooter/MainFooter.vue";
-import CarouselBottom from "../../components/CarouselBottom/CarouselBottom.vue";
+
 </script>
 
 <template>
@@ -15,11 +12,6 @@ import CarouselBottom from "../../components/CarouselBottom/CarouselBottom.vue";
 
   <div class="HomeOffMain">
     <div class="HomeBody">
-      <ImagemCover />
-      <Carousel />
-      <Carousel />
-      <CarouselBottom />
-      <MainFooter />
     </div>
   </div>
 </template>

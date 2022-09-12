@@ -27,66 +27,66 @@ export default {
 
   <swiper
     ref="{swiperRef}"
-    :slidesPerView="5"
+    :slidesPerView="3"
     :centeredSlides="true"
     :spaceBetween="30"
     :navigation="true"
-    style="padding: 0px 40px"
+    class="mySwiper"
     loop
   >
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/TheBlackPhone.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/TheBlackPhone.jpg" alt="" class="CardImgV2" />
         </div>
       </div>
     </swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/cemiterio.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/cemiterio.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/entidade.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/entidade.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/exorcista.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/exorcista.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/ScaryMovie.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/ScaryMovie.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/itcoisa.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/itcoisa.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/jason.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/jason.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/panico.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/panico.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
     <swiper-slide>
-      <div class="ImageContent">
-        <div class="CardImage">
-          <img src="../../img/Umma.jpg" alt="" class="CardImg" />
+      <div class="ImageContentV2">
+        <div class="CardImageV2">
+          <img src="../../img/Umma.jpg" alt="" class="CardImgV2" />
         </div></div
     ></swiper-slide>
   </swiper>

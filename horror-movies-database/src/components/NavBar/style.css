@@ -1,5 +1,20 @@
-.colorTitle {
+.Title {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+}
+
+.ColorTitle {
   color: #890808;
+}
+
+.SubTitle {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .colorSubTitlePrimary {
