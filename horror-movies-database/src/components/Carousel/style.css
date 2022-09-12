@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 30px 40px 10px;
 }
 
 .CardTitle {
@@ -33,4 +34,3 @@
   width: 100%;
   object-fit: cover;
 }
-

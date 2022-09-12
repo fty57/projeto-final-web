@@ -7,7 +7,7 @@
 .ImageCover {
   width: 100%;
   height: 745px;
-  background-image: url(../../img/TheBlackPhoneWallpaper.jpg);
+  background-image: url(../../img/wallpaper-Psycho.jpg);
   background-size: cover;
   color: #000;
   margin-top: -15%;

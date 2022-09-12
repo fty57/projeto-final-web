@@ -31,7 +31,7 @@ export default {
     :centeredSlides="true"
     :spaceBetween="30"
     :navigation="true"
-    class="mySwiper"
+    style="padding: 0px 40px"
     loop
   >
     <swiper-slide>
