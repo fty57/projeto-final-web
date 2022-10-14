@@ -8,3 +8,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 <template>
   <RouterView />
 </template>
+
+<style>
+body {
+  background: #181414;
+}
+</style>
