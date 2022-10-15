@@ -1,39 +1,34 @@
-<script setup lang="ts">
-import NavBarVue from "@/components/NavBar/NavBar.vue";
-import Carousel from "../../components/Carousel/Carousel.vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
-import ImagemCover from "../../components/ImageCover/ImageCover.vue";
-import MainFooter from "../../components/MainFooter/MainFooter.vue";
-import CarouselBottom from "../../components/CarouselBottom/CarouselBottom.vue";
-</script>
-
 <template>
-  <div class="HomeMain">
-    <NavBarVue></NavBarVue>
-  </div>
-
-  <div class="HomeOffMain">
-    <div class="HomeBody">
-      <ImagemCover />
-      <Carousel />
+  <BaseHeader />
+  <BaseBackdrop />
+  <div class="site-body">
+    <div class="backdrop">
       <Carousel />
       <CarouselBottom />
-      <MainFooter />
     </div>
   </div>
+
+  <BaseFooter />
 </template>
 
+<script setup lang="ts">
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+import BaseHeader from "../../components-v2/BaseHeader/BaseHeader.vue";
+import BaseBackdrop from "../../components-v2/BaseBackdrop/BaseBackdrop.vue";
+import Carousel from "../../components/Carousel/Carousel.vue";
+import CarouselBottom from "../../components/CarouselBottom/CarouselBottom.vue";
+import BaseFooter from "../../components-v2/BaseFooter/BaseFooter.vue";
+</script>
+
 <style scoped>
-.HomeMain {
-  width: 100%;
-  height: 15%;
-  padding-top: 2.5%;
-  background-color: transparent;
+.site-body {
+  height: 1300px;
 }
-.HomeBody {
-  width: 100%;
-  height: 85%;
-  background-color: #131212;
+
+.backdrop {
+  background-image: none;
+  padding-top: 400px;
 }
+
 </style>
