@@ -109,54 +109,15 @@
             <aside class="sidebar">
               <h4 class="headline-2">Atores</h4>
               <section>
-                <div class="actor-card">
-                  <img
-                    src="../../img/girl1.jpg"
-                    alt=""
-                    srcset=""
-                    class="actor-img"
-                  />
-                  <div>
-                    <h6 class="headline-3">Mason Thames</h6>
-                    <p class="sub-headline-2">Finney Blake</p>
-                  </div>
-                </div>
-                <div class="actor-card">
-                  <img
-                    src="../../img/girl1.jpg"
-                    alt=""
-                    srcset=""
-                    class="actor-img"
-                  />
-                  <div>
-                    <h6 class="headline-3">Mason Thames</h6>
-                    <p class="sub-headline-2">Finney Blake</p>
-                  </div>
-                </div>
-                <div class="actor-card">
-                  <img
-                    src="../../img/girl1.jpg"
-                    alt=""
-                    srcset=""
-                    class="actor-img"
-                  />
-                  <div>
-                    <h6 class="headline-3">Mason Thames</h6>
-                    <p class="sub-headline-2">Finney Blake</p>
-                  </div>
-                </div>
-                <div class="actor-card">
-                  <img
-                    src="../../img/girl1.jpg"
-                    alt=""
-                    srcset=""
-                    class="actor-img"
-                  />
-                  <div>
-                    <h6 class="headline-3">Mason Thames</h6>
-                    <p class="sub-headline-2">Finney Blake</p>
-                  </div>
-                </div>
+                <ActorCard>
+                  <template v-slot:character>
+                    {{ character }}
+                  </template>
+                  <template v-slot:nameActor>
+                    {{ nameActor }}
+                  </template>
+                  <template v-slot:source :image="{ imgSrc }"></template>
+                </ActorCard>
               </section>
             </aside>
           </div>
@@ -169,11 +130,27 @@
 </template>
 
 <script setup lang="ts">
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
 import BaseHeader from "../../components-v2/BaseHeader/BaseHeader.vue";
 import BaseBackdrop from "../../components-v2/BaseBackdrop/BaseBackdrop.vue";
 import BaseFooter from "../../components-v2/BaseFooter/BaseFooter.vue";
+import ActorCard from "../../components-v2/ActorCard/ActorCard.vue";
+import Girl from "../../img/girl1.jpg";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
+</script>
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      id: 1,
+      character: "Michael Jackson",
+      nameActor: "Martin Luter",
+      imgSrc: Girl,
+      actors: [],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -267,15 +244,6 @@ import BaseFooter from "../../components-v2/BaseFooter/BaseFooter.vue";
   font-family: TiemposHeadlineWeb-Bold, Georgia, serif;
 }
 
-.headline-3 {
-  margin: 0;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  text-shadow: #000 2px 0 5px;
-  font-family: TiemposHeadlineWeb-Bold, Georgia, serif;
-}
-
 .headline-4 {
   margin: 0;
   color: #676767;
@@ -292,16 +260,6 @@ import BaseFooter from "../../components-v2/BaseFooter/BaseFooter.vue";
   letter-spacing: 0.02em;
   text-shadow: #000 2px 0 5px;
   font-family: Graphik-Light-Web, sans-serif;
-}
-
-.sub-headline-2 {
-  color: #9ab;
-  display: inline;
-  font-family: Graphik-Light-Web, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  text-shadow: #000 2px 0 5px;
 }
 
 .sub-headline-3 {
@@ -374,17 +332,5 @@ import BaseFooter from "../../components-v2/BaseFooter/BaseFooter.vue";
   float: right;
   margin-right: 0;
   padding-bottom: 50px;
-}
-
-.actor-card {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.actor-img {
-  width: 60px;
-  height: 60px;
-  margin-right: 20px;
-  border-radius: 60px;
 }
 </style>
